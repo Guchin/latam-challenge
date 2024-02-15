@@ -1,0 +1,6 @@
+Procesar el archivo línea por línea en lugar de cargar todo el contenido en memoria.
+Utilizar un generador para generar los resultados en lugar de almacenarlos todos en una lista.
+Eliminar el uso de defaultdict, ya que no es necesario si procesamos el archivo línea por línea.
+Utilizamos la función max_posts_by_user_per_day para generar los pares de fecha y nombre de usuario línea por línea del archivo.
+Usamos un generador yield en lugar de construir una lista completa de resultados, lo que reduce el consumo de memoria.
+Eliminamos el uso de defaultdict y simplemente utilizamos un diccionario estándar user_posts_count con un tupla (date, username) como clave
