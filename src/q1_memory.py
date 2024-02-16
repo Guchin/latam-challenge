@@ -2,9 +2,9 @@ import json
 from typing import List, Tuple
 from collections import defaultdict
 from datetime import datetime
+from memory_profiler import profile
 
-
-
+@profile
 def q1_memory(file_path: str) -> List[Tuple[datetime.date, str]]:
     user_posts_count = defaultdict(lambda: defaultdict(int))
         

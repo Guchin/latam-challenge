@@ -3,7 +3,9 @@ from typing import List, Tuple
 from collections import Counter
 import emoji
 import heapq
+from memory_profiler import profile
 
+@profile
 def q2_memory(file_path: str) -> List[Tuple[str, int]]:
     top_10_emojis = []
     

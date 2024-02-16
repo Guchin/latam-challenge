@@ -3,10 +3,10 @@ from typing import List, Tuple
 from datetime import datetime
 from collections import defaultdict
 from operator import itemgetter
+from memory_profiler import profile
 
 
-
-
+@profile
 def q1_time(file_path: str) -> List[Tuple[datetime.date, str]]:
     user_posts_count = defaultdict(lambda: defaultdict(int))
     dates = {}
